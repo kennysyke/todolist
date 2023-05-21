@@ -13,7 +13,8 @@ export const Todo = ({ todo }) => {
     dispatch(toggleTodo(todo.id));
   };
 
-  const deleteTodoItem = () => {
+  const deleteTodoItem = (e) => {
+    e.stopPropagation();
     dispatch(deleteTodo(todo.id));
   };
 

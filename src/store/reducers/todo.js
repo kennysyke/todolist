@@ -4,6 +4,7 @@ import { ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "../actions/types/todo";
 const initialState = {
   allIds: [],
   byIds: {},
+  completed: false,
 };
 
 // 2.
